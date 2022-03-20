@@ -1,0 +1,6 @@
+python -m venv venv
+venv\Scripts\activate.bat
+pip install django
+django-admin startproject NOME .
+python manage.py startapp NOME
+python manage.py runserver

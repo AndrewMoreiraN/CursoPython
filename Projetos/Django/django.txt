@@ -1,0 +1,59 @@
+terminal
+py -3 -m venv .venv
+.venv\scripts\activate
+
+
+ctrl+shift+p
+python interpreter
+
+
+terminal
+python -m pip install --upgrade pip
+python -m pip install django
+django-admin startproject NOMEPROJETO .
+python manage.py migrate
+python manage.py startapp NOMEAPP
+
+
+modify NOMEPROJETO/settings.py
+add in installed_apps
+nomeapp.apps.NomeappConfig
+
+
+modify NOMEPROJETO/urls
+from django.urls import path, include (add include)
+add a path to NOMEAPP.urls
+path('', include('nomeapp.urls')),
+
+
+Create a file, NOMEAPP/urls.py
+
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path("", views.home, name="home"),
+]
+
+
+
+Modify NOMEAPP/views.py
+
+from django.shortcuts import render
+
+def home(request):
+    return render(request, 'nomeapp/home.html')
+
+
+create directory in NOMEAPP with name "templates"
+insine a directory with name "nomeapp"
+inside a home.html
+
+
+on root create a directory templates
+inside base.html
+
+on root/templates create a directory static
+
+
+

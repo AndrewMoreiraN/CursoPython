@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>121</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>300</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>300</width>
+    <height>121</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Validador de CPF</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="3">
+     <widget class="QPushButton" name="btnValidarCPF">
+      <property name="font">
+       <font>
+        <family>MS Sans Serif</family>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Validar CPF</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QPushButton" name="btnGerarCPF">
+      <property name="font">
+       <font>
+        <family>MS Sans Serif</family>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Gerar CPF</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLineEdit" name="mostrarResultado">
+      <property name="font">
+       <font>
+        <family>MS Sans Serif</family>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLineEdit" name="receberCPF">
+      <property name="font">
+       <font>
+        <family>MS Sans Serif</family>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLineEdit" name="cpfSemEspecial">
+      <property name="font">
+       <font>
+        <family>MS Sans Serif</family>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QPushButton" name="btnclear">
+      <property name="font">
+       <font>
+        <family>MS Sans Serif</family>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Clear</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
